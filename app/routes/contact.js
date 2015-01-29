@@ -12,7 +12,7 @@ export default Ember.Route.extend({
 					name: name,
 					message: message
 				})
-			})
+			});
 		}
 	}
 });
