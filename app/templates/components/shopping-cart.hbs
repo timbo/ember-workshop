@@ -1,0 +1,13 @@
+<h4>Shopping Cart</h4>
+{{#if items}}
+	<ul>
+		{{#each product in items}}
+			<li>
+				<span {{action 'remove' product}}>[ X ]</span>
+				{{product-card in-cart=true model=product}}
+			</li>
+		{{/each}}
+	</ul>
+{{else}}
+	Nothing added yet.
+{{/if}}
