@@ -1,6 +1,6 @@
 <h2>Contact Form</h2>
 <div class='contact-form'>
-	<div {{action "submitForm" name message on="submit"}}>
+	<form {{action "submitForm" name message on="submit"}}>
 		<label>Name: <br>
 			{{input value=name}}
 		</label>
@@ -11,4 +11,4 @@
 		</label>
 	</div>
 	<button {{action "submitForm" name message}}>Submit</button>
-</div>
+</form>
